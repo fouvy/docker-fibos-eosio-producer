@@ -1,0 +1,15 @@
+version: '2'
+services: 
+  eosio_producer: 
+    build: ./eos
+    restart: always
+    ports:
+      - "9876:9876"
+      - "8876:8876"
+    expose:
+      - "8876"
+    volumes:
+      - ./data:/data
+      - ./eos/config/config_producer.js:/eos/config_producer.js
+      - ./eos/config/producer_node.js:/eos/producer_node.js
+    container_name: eosio_producer
