@@ -15,7 +15,7 @@ change current directory to project
 cd docker-fibos-eosio-producer
 ```
 ## Config your information
-The config file is fibos/config/config_producer.js and find the config params which start with xxxx, change it to your own information. 
+The config file is eos/config/config_producer.js and find the config params which start with xxxx, change it to your own information. 
 If your haven't register producer, you should register producer first.
 ### Register producer(optional)
 The script is register_bp.sh. then run following command. This command depends on fibos
